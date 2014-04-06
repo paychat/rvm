@@ -1,4 +1,6 @@
 ---
+- name: Check /root/bin
+  files: path=/root/bin state=directory
 - name: Copying rvm-installer script
   copy: src=./rvm-installer dest=/root/bin/rvm-installer
 - name: Installing RVM   
